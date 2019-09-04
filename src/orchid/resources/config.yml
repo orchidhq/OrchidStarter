@@ -1,43 +1,23 @@
 site:
   about:
-    siteName: 'Orchid Starter'
-    subtitle: 'Basic starter repo to get going with Orchid quickly'
-    siteDescription: 'This is a short blurb you can set below this index layouts sidebar.'
-    avatar: '/assets/media/logo.jpg'
+    siteName: 'Leeds KUG'
+    subtitle: 'Leeds Kotlin User Group'
+    siteDescription: "Kotlin, it`s like a less shit Java."
+    avatar: 'assets/media/placeholder-logo.png'
 
 theme:
   social:
-    facebook: 'facebookUsername'
-    twitter: 'twitterHandle'
-    instagram: 'instagramHandle'
-    github: 'githubUsername'
-    other:
-      - label: 'linkedin'
-        link: 'https://www.example.com'
-        icon: 'fa-tag'
+    twitter: 'LeedsKotlin'
+    github: 'Leeds-Kotlin-User-Group'
   menu:
     - type: 'page'
       title: 'Home'
       url: '/'
-    - type: "wikiSections"
-    - type: 'taxonomy'
-      taxonomyType: 'categories'
-      includeTerms: true
-      termsAtRoot: true
-    - type: 'page'
-      title: 'About'
-      itemId: 'Author One'
     - type: "pages"
       atRoot: true
   sidebar:
     - type: recentPosts
       limit: 3
-      category: gallery
-      noWrapper: true
-      template:
-        - 'includes/postPreview_mini'
-    - type: recentPosts
-      limit: 5
       category: personal
       noWrapper: true
       template:

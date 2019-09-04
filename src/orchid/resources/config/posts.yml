@@ -1,19 +1,11 @@
 permalink: ':category/:year/:monthName/:slug'
 categories:
-  - key: 'category1'
-    title: 'Category 1'
-  - key: 'category2'
+  - key: 'welcome'
+    title: 'Welcome to Leed Kotlin User Group'
+  - key: 'category'
     title: 'Category 2'
+
 authors:
-  - name: 'Author Two'
-    avatar: 'assets/images/avatar.jpg'
+  - name: 'LKUG'
+    avatar: 'assets/media/avatar.jpg'
     email: 'email@domain.tld'
-postPages:
-  author: 'Author One'
-  layout: single
-  components:
-    - type: pageContent
-    - type: taxonomy
-      taxonomyType: tags
-    - type: taxonomy
-      taxonomyType: categories

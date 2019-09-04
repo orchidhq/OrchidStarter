@@ -1,11 +1,8 @@
 +++
-title = "Examples - Custom"
+title = "About Us"
 
 [[components]]
 type = 'pageContent'
-
-[[components]]
-type = 'replace'
 resource = 'snippets/snippet1.md'
 find = 'static site generator'
 replace = 'JAMstack tool'
