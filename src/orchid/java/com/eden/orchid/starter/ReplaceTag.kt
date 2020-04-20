@@ -18,10 +18,11 @@ import com.eden.orchid.api.options.annotations.Option
  * 3) Create a matching template in `templates/tags` to be rendered, whose filename matches the name passed to the superclass constructor
  * - `templates/tags/replace.peb`
  */
-data class ReplaceTag(
-    @Option var find: String = "",
+class ReplaceTag : TemplateTag("replace", Type.Content, true) {
+
+    @Option var find: String = ""
+
     @Option var replace: String = ""
-) : TemplateTag("replace", Type.Content, true) {
 
     override fun parameters(): Array<String> = arrayOf("find", "replace")
 

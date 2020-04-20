@@ -20,7 +20,7 @@ instead of YAML.
 
 ***
 
-{% replace "Orchid" site.about.siteName %}
+{% replace find="Orchid" replace=site.about.siteName %}
 
 Orchid is a wonderful new Static Site Generator designed to be easy to use, while being highly extensible and incredibly
 powerful. Orchid consists of a core framework which provides the structure for extensibility, and numerous official

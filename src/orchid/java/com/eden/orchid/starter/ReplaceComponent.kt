@@ -1,11 +1,9 @@
 package com.eden.orchid.starter
 
-import com.eden.orchid.api.OrchidContext
 import com.eden.orchid.api.options.annotations.Description
 import com.eden.orchid.api.options.annotations.Option
+import com.eden.orchid.api.resources.resourcesource.LocalResourceSource
 import com.eden.orchid.api.theme.components.OrchidComponent
-
-import javax.inject.Inject
 
 /**
  * This is an example Component, added as a custom component for this site only. A Component is a block of content that
@@ -40,6 +38,6 @@ class ReplaceComponent : OrchidComponent("replace", 100) {
     lateinit var replace: String
 
     val content: String
-        get() = context.getLocalResourceEntry(resource).compileContent(null)
+        get() = context.getResourceEntry(resource, LocalResourceSource).compileContent(null)
 
 }
