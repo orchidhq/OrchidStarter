@@ -38,6 +38,10 @@ class ReplaceComponent : OrchidComponent("replace", 100) {
     lateinit var replace: String
 
     val content: String
-        get() = context.getResourceEntry(resource, LocalResourceSource).compileContent(null)
+        get() = context
+            .getDefaultResourceSource(LocalResourceSource, null)
+            .getResourceEntry(context, resource)
+            ?.compileContent(context, null)
+            ?: ""
 
 }

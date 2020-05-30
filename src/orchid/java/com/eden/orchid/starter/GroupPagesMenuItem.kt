@@ -1,9 +1,6 @@
 package com.eden.orchid.starter
 
-import com.caseyjbrooks.clog.Clog
-import com.eden.common.util.EdenUtils
 import com.eden.orchid.api.OrchidContext
-import com.eden.orchid.api.compilers.TemplateTag
 import com.eden.orchid.api.options.annotations.Description
 import com.eden.orchid.api.options.annotations.Option
 import com.eden.orchid.api.theme.menus.MenuItem

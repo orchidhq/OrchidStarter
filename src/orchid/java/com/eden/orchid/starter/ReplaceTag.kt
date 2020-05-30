@@ -24,6 +24,6 @@ class ReplaceTag : TemplateTag("replace", Type.Content, true) {
 
     @Option var replace: String = ""
 
-    override fun parameters(): Array<String> = arrayOf("find", "replace")
+    override fun parameters() = arrayOf(::find.name, ::replace.name)
 
 }
